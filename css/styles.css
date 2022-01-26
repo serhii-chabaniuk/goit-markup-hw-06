@@ -830,19 +830,49 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-checkbox {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
 .link-checkbox {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+
 .label-checkbox {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
   display: inline-block;
   margin-bottom: 30px;
+}
+
+.icon-check {
+  fill: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customs-icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-chekbox:checked + .customs-icon {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.input-chekbox:checked + .customs-icon > .icon-check {
+  fill: var(--primary-white-color);
+}
+
+.btn-modal {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
