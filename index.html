@@ -346,7 +346,7 @@
         </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="icon-close" style="width: 18px; height: 18px;">
@@ -403,21 +403,23 @@
                         maxlength="255"
                     ></textarea>
                 </label>
-                <div>
+    
                     <label class="label-checkbox">
                         <input type="checkbox"
                         name="terms-of-the-contract"
-                        class="modal-checkbox"
+                        class="input-chekbox visually-hidden"
                         value="on"
-                        > Соглашаюсь с рассылкой и принимаю <a href="" target="_blank" class="link-checkbox">Условия договора</a>
+                        ><span class="customs-icon">
+                            <svg class="icon-check" style="width: 16px; height: 15px;">
+                                <use href="images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span> Соглашаюсь с рассылкой и принимаю <a href="" class="link-checkbox" target="_blank">Условия договора</a>
                     </label>
-                </div>
-                <button type="submit" class="btn">Отправить</button>
+
+                <button type="submit" class=" btn btn-modal">Отправить</button>
             </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
-
-Соглашаюсь с рассылкой и принимаю<a href="" target="_blank">Условия договора</a>
