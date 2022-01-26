@@ -489,6 +489,10 @@ body {
   background-color: #2f303a;
 }
 
+.container.footer {
+  display: flex;
+}
+
 .logo.bottom {
   display: inline-block;
   margin-bottom: 20px;
@@ -562,6 +566,41 @@ body {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--primary-white-color);
+}
+
+/* ----------------------------------------- */
+
+.footer-subscription {
+  margin-left: 93px;
+}
+
+.label-subscription {
+  margin-top: 12px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.input-subscription {
+  margin-top: 20px;
+  margin-right: 12px;
+  padding-left: 16px;
+  display: block;
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* main portfolio */
@@ -759,9 +798,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-
-/* .modal-form {
-} */
 
 .modal-label {
   display: block;
