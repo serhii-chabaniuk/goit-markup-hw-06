@@ -348,13 +348,18 @@
                     <label class="label-subscription">Подпишитесь на рассылку
                         <input type="email" name="subscription" class="input-subscription" placeholder="E-mail">
                     </label>
-                    <button type="submit" class="btn">Подписаться</button>
+                    <div class="div-icon-send">
+                        <button type="submit" class="btn subscription">Подписаться</button>
+                        <svg class="icon-send" style="width: 24px; height: 24px;">
+                            <use href="images/icons.svg#icon-send"></use>
+                        </svg>
+                    </div>
                 </form>
             </div>
         </div>
     </footer>
 
-    <div class="backdrop is-hidden1" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="icon-close" style="width: 18px; height: 18px;">
